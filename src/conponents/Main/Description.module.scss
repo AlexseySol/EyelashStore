@@ -1,0 +1,96 @@
+@import "../../mixin.scss";
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.card_block {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+.title {
+  @include fond(30px, 150%);
+  color: $colorTitle;
+  margin: 91px 0px 41px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  position: relative;
+  background: #f2eef7;
+  border: 3px solid #4c3d74;
+  border-radius: 30px;
+  width: 72%;
+  margin: 40px auto;
+  padding: 30px;
+  @media (min-width: 600px) {
+    width: 40%;
+  }
+  @media (min-width: 900px) {
+    width: 25%;
+  }
+  .img {
+    position: absolute;
+    bottom: 84%;
+    right: 84%;
+  }
+}
+span {
+  text-align: start;
+  @include fond(16px, 150%);
+  color: $colorText;
+}
+
+.block_footer {
+  button {
+    width: 70%;
+    background: #a387c4;
+    border-radius: 30px;
+    @include fond(16px, 21px);
+    color: #ffffff;
+    height: 60px;
+    margin: 40px 0px;
+
+    @media (min-width: 900px) {
+      width: 40%;
+    }
+  }
+  h1 {
+    @include fond(16px, 150%);
+    color: $colorTitle;
+    text-align: center;
+    width: 45%;
+    @media (min-width: 900px) {
+      text-align: start;
+      margin-right: 15%;
+    }
+  }
+}
+.block_footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+  }
+  img {
+    position: relative;
+    top: 5rem;
+  }
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
