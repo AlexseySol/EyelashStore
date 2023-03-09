@@ -1,0 +1,28 @@
+@import "../../mixin.scss";
+
+.bacground {
+  background-color: #4c3d74;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 95px;
+  @media (min-width:600px) {
+    display: flex;
+  
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  
+  ul{
+   
+    li{
+      
+      @include fond(16px,150%);
+      color: white;
+      padding: 10px 0px;
+    }
+  }
+}

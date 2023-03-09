@@ -1,0 +1,111 @@
+@import "../../mixin.scss";
+
+
+
+.bacground{
+  background: #4C3D74;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+
+  h1{
+    @include fond (30px,150%);
+    color: white;
+    text-align: center;
+    padding-top: 91px;
+  }
+  h3{
+    @include fond (16px,150%);
+    color: white;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 30px;
+    text-align: start;
+    width: 72%;
+    margin: 0 auto;
+    @media (min-width:900px) {
+      margin: 0;
+      width: 80%;
+       }
+  }
+
+}
+.block_items{
+  width: 72%;
+  margin: 33px auto 0px auto;
+  @media (max-width:480px) {
+    width: 85%;
+  }
+  @media (min-width:600px) {
+ display: grid;
+grid-template-columns: 1fr 1fr;
+width: 90%;
+gap: 4%;
+  }
+  @media (min-width:900px) {
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 4%;
+     }
+  li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    @include fond (16px,150%);
+    color: white;
+    img{
+      padding-right: 10px;
+    }
+  }
+}
+.block_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 72%;
+  margin: 33px auto 0px auto;
+  @media (min-width:900px) {
+    margin: 33px 0 0 0;
+    width: 80%;
+     }
+ 
+  li{
+    @include fond (16px,150%);
+    color: #FFFFFF;
+    &:nth-of-type(1){
+      font-size: 30px;
+    }
+    &:nth-of-type(2){
+      font-size: 30px;
+    }
+    &:nth-of-type(5){
+      font-size: 30px;
+    }
+    &:nth-of-type(6){
+      font-size: 30px;
+    }
+  }
+}
+.block_wrapper{
+  @media (min-width:900px) {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 4rem;
+
+}
+}
+.block_img{
+display: block;
+margin: 2rem auto;
+padding-bottom: 7rem;
+@media (min-width:900px) {
+padding: 0%;
+margin: 0;
+width: 400px;
+height: 491px;
+
+       }
+}

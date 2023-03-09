@@ -1,0 +1,86 @@
+@import "../../mixin.scss";
+
+
+.wrapper{
+    width: 72%;
+    margin: 0 auto;
+  
+    @media (min-width: 900px) {
+        width: 90%;
+      }
+}
+
+.title {
+  @include fond(30px, 150%);
+  color: $colorTitle;
+  text-align: center;
+  margin: 94px 0px 29px 0px;
+  @media (min-width: 900px) {
+    font-size: 50px;
+  }
+}
+
+.block {
+
+  li {
+    border-top: 3px solid #4c3d74;
+    padding: 23px 0px;
+    @include fond(20px, 150%);
+    color: $colorText;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      @include fond(30px, 36px);
+      color: $colorText;
+    }
+    &:nth-of-type(5) {
+      border-bottom: 3px solid #4c3d74;
+    }
+  }
+}
+
+.block_footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 37px;
+    @media (min-width: 900px) {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      }
+  h2 {
+    @include fond(20px, 150%);
+    color: $colorText;
+    text-align: center;
+    @media (min-width: 900px) {
+        margin-left: 5rem;
+        width: 30%;
+        text-align: start;
+        }
+  }
+  button {
+    width: 70%;
+    background: #a387c4;
+    border-radius: 30px;
+    @include fond(16px, 21px);
+    color: #ffffff;
+    height: 60px;
+    margin: 40px 0px;
+    @media (min-width: 600px) {
+        width: 50%;
+      }
+    @media (min-width: 900px) {
+      width: 25%;
+    }
+}
+}
+.img{
+    position: relative;
+   display: block;
+    margin: 0 auto;
+    @media (min-width: 900px) {
+        left: 30%;
+      }
+
+}

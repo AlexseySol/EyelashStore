@@ -1,0 +1,158 @@
+@import "../../mixin.scss";
+
+.background {
+  background-color: #4c3d74;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+padding-top: 91px;
+
+
+
+  h1{
+    @include fond(30px,40px);
+    color: white;
+    text-align: center;
+  }
+}
+.card{
+  background: #F2EEF7;
+  border-radius: 30px;
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @media (min-width: 700px) {
+ width: 45%;
+ margin: 3rem 1rem;
+   }
+
+  .img{
+    width: 98px;
+    height: 98px;
+    position: absolute;
+    top: -54px;
+    right: 0;
+  }
+
+  h3{
+    @include fond(24px,150%);
+    color: $colorText;
+    text-align: center;
+    padding: 51px 0px 15px 0px;
+  }
+  .card_block{
+    width: 90%;
+    margin: 0 auto;
+    li{
+      @include fond(16px,150%);
+      color: $colorText;
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+     
+      span{
+        @include fond(25px,150%);
+        color: $colorText;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+ h2{
+  @include fond(26px,150%);
+  color: $colorText;
+  text-align: center;
+ }
+ h4{
+  @include fond(14px,150%);
+  color: $colorText;
+  text-align: center;
+  span{
+    @include fond(25px,150%);
+    color: $colorText;
+    margin-left: 3rem;
+  }
+ }
+ button{
+  width: 70%;
+  background: #a387c4;
+  border-radius: 30px;
+  @include fond(16px, 21px);
+  color: #ffffff;
+  height: 60px;
+  margin:  0 auto;
+  position: relative;
+  top: 25px;
+
+
+ }
+}
+
+.wrapper_block{
+
+  margin: 0 auto;
+  @media (min-width: 700px) {
+    display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+   }
+   @media (min-width: 1100px) {
+    display: flex;
+  flex-wrap: nowrap;
+
+   }
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 700px) {
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+   }
+
+   img{
+    margin-right: 1rem;
+   }
+  h2{
+    @include fond(16px,40px);
+    color: white;
+    text-align: center;
+    @media (min-width: 700px) {
+width: 50%;
+text-align: start;
+padding: 0 10px;
+     }
+  }
+  h5{
+    @include fond(16px,40px);
+    color: white;
+    text-align: center;
+   
+  }
+  button{
+    width: 60%;
+    border: 4px solid #A387C4;
+    border-radius: 30px;
+    @include fond(16px, 21px);
+    color: #ffffff;
+    height: 60px;
+       @media (min-width: 600px) {
+      width: 50%;
+      margin-right: 1rem;
+    }
+  @media (min-width: 900px) {
+    width: 25%;
+    margin-right: 1rem;
+  } 
+  }
+}
